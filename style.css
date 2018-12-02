@@ -1,29 +1,1265 @@
-*{
-    padding:0; 
-    margin:0;
-     
-}
+/*.header-site{*/
+/*   background: #000000 url(https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350) 100% 100% no-repeat;*/
+/*}*/
 
-body{
-    overflow-x:hidden;
-    font-family: 'Open Sans' , sans-serif;
+/*:focus*/
+/*html, body, div, span, object, iframe,*/
+/*p, blockquote, pre,*/
+/*abbr, address, cite, code,*/
+/*del, dfn, em, img, ins, kbd, q, samp,*/
+/*small, strong, sub, sup, var,*/
+/*b, i,*/
+/*dl, dt, dd, ol, ul, li,*/
+/*fieldset, form, label, legend,*/
+/*table, caption, tbody, tfoot, thead, tr, th, td,*/
+/*article, aside, canvas, details, figcaption, figure, */
+/*footer, header, hgroup, menu, nav, section, summary,*/
+/*time, mark, audio, video {*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*    border:0;*/
+/*    outline:0;*/
+/*    font-size:100%;*/
+/*    vertical-align:baseline;*/
+/*    background:transparent;*/
+/*}*/
+
+/*body {*/
+/*    line-height:1;*/
+/*}*/
+
+/*article,aside,details,figcaption,figure,*/
+/*footer,header,hgroup,menu,nav,section { */
+/*    display:block;*/
+/*}*/
+
+/*nav ul {*/
+/*    list-style:none;*/
     
-}
+/*}*/
 
-a{
-    text-decoration: none;
-    transition: all 500ms ease-in-out;
-}
+/*blockquote, q {*/
+/*    quotes:none;*/
+/*}*/
 
-h1,h2,h3{
-    font-family: 'Pacifico', cursive;
-    text-transform: uppercase;
-    font-weight: 100;
-    padding-top: 10px;
-}
-
-.myimages img{
-    width: 1000px;
-    height: 1000px;
+/*blockquote:before, blockquote:after,*/
+/*q:before, q:after {*/
+/*    content:'';*/
+/*    content:none;*/
+/*}*/
+/*.navbar {*/
     
+/*}*/
+
+/*a {*/
+/*    margin:0;*/
+/*    padding:0;*/
+/*    font-size:100%;*/
+/*    vertical-align:baseline;*/
+/*    background:transparent;*/
+/*}*/
+
+/* change colours to suit your needs */
+/*ins {*/
+/*    background-color:#ff9;*/
+/*    color:#000;*/
+/*    text-decoration:none;*/
+/*}*/
+
+/* change colours to suit your needs */
+/*mark {*/
+/*    background-color:#ff9;*/
+/*    color:#000; */
+/*    font-style:italic;*/
+/*    font-weight:bold;*/
+/*}*/
+
+/*del {*/
+/*    text-decoration: line-through;*/
+/*}*/
+
+/*abbr[title], dfn[title] {*/
+/*    border-bottom:1px dotted;*/
+/*    cursor:help;*/
+/*}*/
+
+/*table {*/
+/*    border-collapse:collapse;*/
+/*    border-spacing:0;*/
+/*}*/
+
+/* change border colour to suit your needs */
+/*hr {*/
+/*    display:block;*/
+/*    height:1px;*/
+/*    border:0;   */
+/*    border-top:1px solid #cccccc;*/
+/*    margin:1em 0;*/
+/*    padding:0;*/
+/*}*/
+
+/*input, select {*/
+/*    vertical-align:middle;*/
+/*}*/
+
+
+
+/*FAJERS CODE*/
+
+/**{*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*    body {*/
+/*        background-color: #f3f3f3;*/
+/*    }*/
+    
+/*    header {*/
+/*        background-color: #fff;*/
+/*        width: 100%;*/
+/*        height: 100px;*/
+/*    }*/
+    
+/*    header .header-brand {*/
+/*        font-family: 'Chakra Petch', sans-serif;*/
+/*        font-size: 24px;*/
+/*        font-weight:900;*/
+/*        color:#111;*/
+/*        display: block;*/
+/*        margin:0 auto;*/
+/*        text-align:center;*/
+/*        padding:20px 0;*/
+/*    }*/
+    
+/*    header nav ul {*/
+/*        display: block;*/
+/*        margin: 0 auto;*/
+/*        width: fit-content;*/
+        
+/*    }*/
+    
+/*    header nav ul li {*/
+/*        display:inline-block;*/
+/*        float: left;*/
+/*        list-style: none;*/
+/*        padding:0 16px;*/
+        
+        /* Mixins */
+@mixin vert-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #EEE;
+  padding-top: 30px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-family: "Open Sans", "Helvetica";
+  font-weight: normal;
+}
+
+.owl-carousel--item {
+  height: 150px;
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 150px;
+    width: auto !important;
+    @include vert-align;
+  }
+}
+
+// vendor
+.owl-stage-outer {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1rem;
+    height: 100%;
+    z-index: 9999;
+  }
+  &:before {
+    left: 0;
+    background-image: linear-gradient(to left, transparent, #EEE);
+  }
+  &:after {
+    right: 0;
+    background-image: linear-gradient(to right, transparent, #EEE);
+  }  
+}
+
+/*    }*/
+    
+/*    header nav ul li a {*/
+/*        font-family: 'Chakra Petch', sans-serif;*/
+/*        font-size: 16px;*/
+/*        color:#111;*/
+/*        }*/
+    
+/*    header .header-cases {*/
+/*        display: none;*/
+/*    }*/
+
+/*INDEX PAGE CODE*/
+
+/*.index-banner {*/
+/*    width:100%;*/
+/*    height: 100vh;*/
+/*    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/57/04/42579fee0ea8fa0.jpg);*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    color:#fff;*/
+/*}*/
+
+/*.index-banner h2 {*/
+/*        font-family: 'Chakra Petch', sans-serif;*/
+/*        font-size: 60px;*/
+/*        font-weight: 900;*/
+/*        color:#fff;*/
+/*        text-align:center;*/
+/*}*/
+
+/* Mixins */
+/*@mixin vert-align {*/
+/*  position: relative;*/
+/*  top: 50%;*/
+/*  transform: translateY(-50%);*/
+/*}*/
+
+/*html, body {*/
+/*  height: 100%;*/
+/*}*/
+/*body {*/
+/*  background-color: #EEE;*/
+/*  padding-top: 30px;*/
+/*}*/
+/*.container {*/
+/*  max-width: 1200px;*/
+/*  margin: 0 auto;*/
+/*}*/
+/*h1 {*/
+/*  text-align: center;*/
+/*  font-family: "Open Sans", "Helvetica";*/
+/*  font-weight: normal;*/
+/*}*/
+
+/*.owl-carousel--item {*/
+/*  height: 150px;*/
+  
+/*  img {*/
+/*    display: block;*/
+/*    margin: 0 auto;*/
+/*    max-width: 100%;*/
+/*    max-height: 150px;*/
+/*    width: auto !important;*/
+/*    @include vert-align;*/
+/*  }*/
+/*}*/
+
+/*// vendor*/
+/*.owl-stage-outer {*/
+/*  &:before,*/
+/*  &:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    width: 1rem;*/
+/*    height: 100%;*/
+/*    z-index: 9999;*/
+/*  }*/
+/*  &:before {*/
+/*    left: 0;*/
+/*    background-image: linear-gradient(to left, transparent, #EEE);*/
+/*  }*/
+/*  &:after {*/
+/*    right: 0;*/
+/*    background-image: linear-gradient(to right, transparent, #EEE);*/
+/*  }  */
+/*}*/
+
+#area-chart,
+#line-chart,
+#bar-chart,
+#stacked,
+#pie-chart{
+  min-height: 250px;
+}
+
+/* Mixins */
+@mixin vert-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  background-color: #EEE;
+  padding-top: 30px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-family: "Open Sans", "Helvetica";
+  font-weight: normal;
+}
+
+.owl-carousel--item {
+  height: 150px;
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 150px;
+    width: auto !important;
+    @include vert-align;
+  }
+}
+
+// vendor
+.owl-stage-outer {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1rem;
+    height: 100%;
+    z-index: 9999;
+  }
+  &:before {
+    left: 0;
+    background-image: linear-gradient(to left, transparent, #EEE);
+  }
+  &:after {
+    right: 0;
+    background-image: linear-gradient(to right, transparent, #EEE);
+  }  
+}
+
+#area-chart,
+#line-chart,
+#bar-chart,
+#stacked,
+#pie-chart{
+  min-height: 250px;
+}
+
+#graph-box {
+  width:1058px;
+  height:680px;
+  background:#ddd;
+  margin:10px auto;
+  position:relative;
+}
+
+div.point {
+	opacity:1;
+  background:green;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  position:absolute;
+}
+
+#line-p1, #line-p2, #line-p3, #line-p4, #line-p5, #line-p6, #line-p7, #line-p8, #line-p9, #line-p10, #line-p11, #line-p12, #line-p13, #line-p14 {
+    background: green;
+    width: 0px;
+    height: 2px;
+  position:absolute;
+  -webkit-animation: move1 0.25s linear forwards;
+  -webkit-transform-origin:0 0;
+}
+
+
+
+@-webkit-keyframes move1 {
+   0% {width: 0px;}
+	100% {width: 95px;}
+}
+
+@-webkit-keyframes move2 {
+   0% {width: 0px;}
+	100% {width: 85px;}
+}
+
+@-webkit-keyframes move3 {
+   0% {width: 0px;}
+	100% {width: 100px;}
+}
+
+@-webkit-keyframes move4 {
+   0% {width: 0px;}
+	100% {width: 100px;}
+}
+
+@-webkit-keyframes move6 {
+   0% {width: 0px;}
+	100% {width: 85px;}
+}
+
+@-webkit-keyframes move7 {
+   0% {width: 0px;}
+	100% {width: 85px;}
+}
+
+@-webkit-keyframes move11 {
+   0% {width: 0px;}
+	100% {width: 120px;}
+}
+
+@-webkit-keyframes move13 {
+   0% {width: 0px;}
+	100% {width: 105px;}
+}
+
+#line-p1 {
+	left:50px;
+  bottom:0px;
+  -webkit-transform: rotate(-34deg);
+  }
+
+#line-p2 {
+	left:122px;
+  bottom:48px;
+  -webkit-animation: move2 0.25s linear forwards;
+  -webkit-transform: rotate(-26deg);
+  }
+
+#line-p3 {
+	left:194px;
+  bottom:81px;
+  -webkit-animation: move3 0.25s linear forwards;
+  -webkit-transform: rotate(-37deg);
+  }
+#line-p4 {
+	left:266px;
+  bottom:136px;
+  -webkit-animation: move4 0.25s linear forwards;
+  -webkit-transform: rotate(-37deg);
+  }
+#line-p5 {
+	left:338px;
+  bottom:191px;
+  -webkit-transform: rotate(-33deg);
+  }
+#line-p6 {
+	left:410px;
+  bottom:239px;
+  -webkit-animation: move6 0.25s linear forwards;
+  -webkit-transform: rotate(-22deg);
+  }
+#line-p7 {
+	left:482px;
+  bottom:268px;
+  -webkit-animation: move7 0.25s linear forwards;
+  -webkit-transform: rotate(-13deg);
+  }
+#line-p8 {
+	left:554px;
+  bottom:282px;
+  -webkit-transform: rotate(-31deg);
+  }
+#line-p9 {
+	left:626px;
+  bottom:325px;
+  -webkit-transform: rotate(-30deg);
+  }
+#line-p10 {
+	left:698px;
+  bottom:366px;
+  -webkit-transform: rotate(-31deg);
+  }
+#line-p11 {
+	left:770px;
+  bottom:408px;
+  -webkit-animation: move11 0.25s linear forwards;
+  -webkit-transform: rotate(-50deg);
+  }
+#line-p12 {
+	left:842px;
+  bottom:496px;
+  -webkit-transform: rotate(-32deg);
+  }
+#line-p13 {
+	left:914px;
+  bottom:541px;
+  -webkit-transform: rotate(-39deg);
+  -webkit-animation: move13 0.25s linear forwards;
+  }
+
+
+/* --------- WAGES ANIMATIONS, LINES ----- */
+
+#line-w1, #line-w2, #line-w3, #line-w4, #line-w5, #line-w6, #line-w7, #line-w8, #line-w9, #line-w10, #line-w11, #line-w12, #line-w13, #line-w14 {
+    background: brown;
+    width: 0px;
+    height: 2px;
+  position:absolute;
+  -webkit-animation: move1w 0.25s linear forwards;
+  -webkit-transform-origin:0 0;
+}
+
+
+
+@-webkit-keyframes move1w {
+   0% {width: 0px;}
+	100% {width: 100px;}
+}
+@-webkit-keyframes move2w {
+   0% {width: 0px;}
+	100% {width: 95px;}
+}
+@-webkit-keyframes move3w {
+   0% {width: 0px;}
+	100% {width: 95px;}
+}
+@-webkit-keyframes move4w {
+   0% {width: 0px;}
+	100% {width: 90px;}
+}
+@-webkit-keyframes move5w {
+   0% {width: 0px;}
+	100% {width: 100px;}
+}
+@-webkit-keyframes move6w {
+   0% {width: 0px;}
+	100% {width: 80px;}
+}
+@-webkit-keyframes move7w {
+   0% {width: 0px;}
+	100% {width: 85px;}
+}
+@-webkit-keyframes move8w {
+   0% {width: 0px;}
+	100% {width: 80px;}
+}
+@-webkit-keyframes move9w {
+   0% {width: 0px;}
+	100% {width: 80px;}
+}
+@-webkit-keyframes move10w {
+   0% {width: 0px;}
+	100% {width: 85px;}
+}
+@-webkit-keyframes move11w {
+   0% {width: 0px;}
+	100% {width: 90px;}
+}
+
+@-webkit-keyframes move12w {
+   0% {width: 0px;}
+	100% {width: 85px;}
+}
+@-webkit-keyframes move13w {
+   0% {width: 0px;}
+	100% {width: 85px;}
+}
+
+#line-w1 {
+	left:50px;
+  bottom:0px;
+  -webkit-animation: move1w 0.25s linear forwards;
+  -webkit-transform: rotate(-36deg);
+  }
+
+#line-w2 {
+	left:122px;
+  bottom:51px;
+  -webkit-animation: move2w 0.25s linear forwards;
+  -webkit-transform: rotate(-31deg);
+  }
+
+#line-w3 {
+	left:194px;
+  bottom:94px;
+  -webkit-animation: move3w 0.25s linear forwards;
+  -webkit-transform: rotate(-31deg);
+  }
+#line-w4 {
+	left:266px;
+  bottom:136px;
+  -webkit-animation: move4w 0.25s linear forwards;
+  -webkit-transform: rotate(-29deg);
+  }
+#line-w5 {
+	left:338px;
+  bottom:174px;
+  -webkit-animation: move5w 0.25s linear forwards;
+  -webkit-transform: rotate(-36deg);
+  }
+#line-w6 {
+	left:410px;
+  bottom:228px;
+  -webkit-animation: move6w 0.25s linear forwards;
+  -webkit-transform: rotate(-10deg);
+  }
+#line-w7 {
+	left:482px;
+  bottom:242px;
+  -webkit-animation: move7w 0.25s linear forwards;
+  -webkit-transform: rotate(14deg);
+  }
+#line-w8 {
+	left:554px;
+  bottom:222px;
+  -webkit-animation: move8w 0.25s linear forwards;
+  -webkit-transform: rotate(8deg);
+  }
+#line-w9 {
+	left:626px;
+  bottom:211px;
+  -webkit-animation: move9w 0.25s linear forwards;
+  -webkit-transform: rotate(1deg);
+  }
+#line-w10 {
+	left:698px;
+  bottom:208px;
+  -webkit-animation: move10w 0.25s linear forwards;
+  -webkit-transform: rotate(-11deg);
+  }
+#line-w11 {
+	left:770px;
+  bottom:221px;
+  -webkit-animation: move11w 0.25s linear forwards;
+  -webkit-transform: rotate(-24deg);
+  }
+#line-w12 {
+	left:842px;
+  bottom:255px;
+  -webkit-animation: move12w 0.25s linear forwards;
+  -webkit-transform: rotate(-1deg);
+  }
+#line-w13 {
+	left:914px;
+  bottom:255px;
+  -webkit-transform: rotate(-14deg);
+  -webkit-animation: move13w 0.25s linear forwards;
+  }
+
+
+
+
+
+/* -------------------- PRODUCTIVITY POINTS-----------------------*/
+
+#prod-point1948 {
+  
+  left:50px;
+  bottom:0px;
+}
+
+#prod-point1953 {
+  
+  left:122px;
+  bottom:48px;
+  
+  
+  
+}
+
+#prod-point1958 {
+  
+  left:194px;
+  bottom:81px;
+}
+
+#prod-point1963 {
+  
+  left:266px;
+  bottom:136px;
+ 
+  
+  
+  
+}
+
+#prod-point1968 {
+  
+  left:338px;
+  bottom:191px;
+ 
+  
+  
+  
+}
+
+#prod-point1973 {
+  
+  left:410px;
+  bottom:239px;
+ 
+  
+  
+  
+}
+
+#prod-point1978 {
+  
+  left:482px;
+  bottom:266px;
+ 
+  
+  
+  
+}
+
+#prod-point1983 {
+  
+  left:554px;
+  bottom:282px;
+ 
+  
+  
+  
+}
+
+#prod-point1988 {
+  
+  left:626px;
+  bottom:325px;
+ 
+  
+  
+  
+}
+
+#prod-point1993 {
+  
+  left:698px;
+  bottom:366px;
+ 
+  
+  
+  
+}
+
+#prod-point1998 {
+  
+  left:770px;
+  bottom:409px;
+ 
+  
+  
+  
+}
+
+#prod-point2003 {
+  
+  left:842px;
+  bottom:496px;
+ 
+  
+  
+  
+}
+
+#prod-point2008 {
+  
+  left:914px;
+  bottom:541px;
+ 
+  
+  
+  
+}
+
+#prod-point2013 {
+  
+  left:986px;
+  bottom:600px;
+ 
+  
+  
+  
+}
+
+/* --------------------WAGES -----------------------*/
+
+#wages-point1948 {
+  
+  left:50px;
+  bottom:0px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1953 {
+  
+  left:122px;
+  bottom:51px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1958 {
+  
+  left:194px;
+  bottom:94px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1963 {
+  
+  left:266px;
+  bottom:136px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1968 {
+  
+  left:338px;
+  bottom:174px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1973 {
+  
+  left:410px;
+  bottom:225px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1978 {
+  
+  left:482px;
+  bottom:237px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1983 {
+  
+  left:554px;
+  bottom:218px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1988 {
+  
+  left:626px;
+  bottom:207px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1993 {
+  
+  left:698px;
+  bottom:206px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point1998 {
+  
+  left:770px;
+  bottom:220px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point2003 {
+  
+  left:842px;
+  bottom:251px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point2008 {
+  
+  left:914px;
+  bottom:252px;
+  background:brown;
+  
+  
+  
+}
+
+#wages-point2013 {
+  
+  left:986px;
+  bottom:270px;
+  background:brown;
+  
+  
+  
+}
+
+body
+  background linear-gradient(45deg, #BB1881, #F88B50)
+  font-family sans-serif
+
+.contact-wrapper
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  width 100%
+  
+.flip-card
+  border-radius 0.5em
+  position fixed
+  top 1em
+  left 1em
+  width 5em
+  padding 0.5em
+  border 0.1em solid #fff
+  color #fff
+  text-align center
+  cursor pointer
+  z-index 9
+.envelope
+  position relative
+  display block
+  width 30em
+  height 35em
+  margin 0 auto
+  &.active
+    .content
+      padding 15em 2em 2em
+    .paper.front,
+    .paper.back
+      animation-duration 1.5s
+      animation-direction normal
+      animation-timing-function ease-in-out
+      animation-fill-mode forwards
+    .paper.front
+      animation-name envelope-front
+    .paper.back
+      animation-name envelope-back
+      &:before
+        animation-duration 0.5s
+        animation-direction normal
+        animation-timing-function ease-in-out
+        animation-fill-mode forwards
+        animation-delay 1.25s
+        animation-name envelope-back-before
+    .bottom-wrapper
+      transform rotateX(180deg)
+      &:after
+        z-index 0
+        opacity 1
+  
+  .content
+    padding 2em
+    box-sizing border-box
+    position relative
+    z-index 9
+    transition all 0.5s ease-in-out
+    transition-delay 1s
+    
+  .top-wrapper,
+  .bottom-wrapper
+    box-sizing border-box
+    background #03A9F5
+    color #fff
+    
+  .top-wrapper
+    padding 2em 2em 0
+    border-top-left-radius 0.5em
+    border-top-right-radius 0.5em
+  
+  .bottom-wrapper
+    padding 0 2em 2em
+    border-bottom-left-radius 0.5em
+    border-bottom-right-radius 0.5em
+    transition all 0.5s ease-in-out
+    transform-origin top
+    transform-style preserve-3d
+    position relative
+    overflow hidden
+    margin-top -1px
+    &:after
+      position absolute
+      content ''
+      display block
+      opacity 0
+      background #03A9F5
+      top 0
+      left 0
+      width 100%
+      height 100%
+      z-index -1
+    
+  form
+    label
+      display block
+      padding-bottom 0.5em
+    input,
+    textarea
+      width 100%
+      box-shadow 0
+      background transparent
+      color #fff
+    input
+      border-width 0 0 0.1em
+      border-color #fff
+      border-style solid
+    textarea
+      border 0.1em solid #fff
+      border-radius 0.25em
+    .submit-card
+      background #fff
+      color #222
+      text-align center
+      padding 0.5em
+      box-sizing border-box
+      background #fff
+      width 100%
+      border 0
+      box-shadow none
+      border-radius 0.25em
+      cursor pointer
+    .input
+      padding-bottom 1em
+      
+  .paper
+    position absolute
+    display block
+    top 0
+    left 0
+    border-bottom-left-radius 0.5em
+    border-bottom-right-radius 0.5em
+    overflow hidden
+    &.back
+      top 0
+      &:before
+        content ''
+        display block
+        width 0
+        height 0
+        margin-bottom -1px
+        border-style solid
+        border-width 0 15em 10em 15em
+        border-color transparent transparent #d3d3d3 transparent
+        transform-origin bottom
+        transform-style preserve-3d
+        z-index 0
+      &:after
+        content ''
+        display block
+        background-color #d3d3d3
+        width 30em
+        height 20em
+    &.front
+      top 10em
+      box-shadow 0.1em 0.5em 0.5em rgba(0,0,0,0.25)
+      z-index 0
+      &:before
+        content ''
+        display block
+        width 0
+        height 0
+        border-style solid
+        border-width 10em 15em 0 15em
+        border-color transparent #fff
+      &:after
+        content ''
+        display block
+        width 30em
+        height 10em
+        background #fff
+        margin-top -1px
+@keyframes envelope-front {
+  0 {
+    top: 10em;
+    z-index: 0;
+  }
+  
+  50% {
+    top: 15em;
+    z-index: 9;
+  }
+  
+  100% {
+    top: 10em;
+    z-index: 9;
+  }
+}
+
+@keyframes envelope-back {
+  0 {
+    top: 0;
+  }
+  
+  50% {
+    top: 5em;
+  }
+  
+  100% {
+    top: 0;
+  }
+} 
+
+@keyframes envelope-back-before {
+  0 {
+    border-color transparent transparent #d3d3d3 transparent
+    transform: rotateX(0deg);
+    z-index: 0;
+  }
+  
+  100% {
+    border-color transparent transparent #fff transparent
+    transform: rotateX(180deg);
+    z-index: 99;
+    position: relative;
+  }
+}          
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600)
+$bgcolor: #24282e
+$red: #ec3029
+
+body
+  background-color: $bgcolor
+  font-family: 'Open Sans', sans-serif
+.donate
+  /*padding: 50px*/
+  background-color: #171b24
+  width: 500px
+  color: #FFF
+.donate p
+  line-height: 24px
+  font-size: 14px
+  font-weight: 300
+.donate h3
+  font-size: 14px
+  font-weight: 300
+  margin-bottom: 30px
+.denomination
+  float: left
+  width: 33%
+  text-align: center
+  padding: 13px 0
+  cursor: pointer
+  background-color: #171b24
+  margin: 0 1px 1px 0
+.denomination label
+  font-weight: 600
+.denomination input
+  left: -10001px
+  position: absolute
+.denomination-other
+  width: 99.8%
+.denomination-other input
+  color: #FFF
+  font-size: 14px
+  font-weight: 600
+  width: inherit
+  text-align: center
+  background-color: #171b24
+  border: none
+  padding: 13px 0
+.denomination-other input:hover
+  background-color: $red
+.donate-amount .selected, .donate-amount .denomination:hover
+  background-color: #EC3029
+  border: 0
+.donate-black h2
+  font-family: 'Oswald', sans-serif
+  color: #FFF
+  font-size: 32px
+  margin-bottom: 30px
+.donate-black h2 span
+  display: block
+  float: left
+  font-size: 16px
+  padding-top: 7px
+  margin-right: 20px
+  text-align: center
+  width: 30px
+  height: 25px
+  background-color: $red
+  border-radius: 50%
+.donate-type label,
+.donate-payment label
+  font-size: 14px
+  font-weight: 300
+  margin-right: 30px
+.donate-blue
+  background-color: #1e252d
+  padding: 25px
+.donate-black
+  padding: 25px
+.donate-submit button
+  font-family: 'Oswald', sans-serif
+  width: 100%
+  background-color: $red
+  border: none
+  color: #FFF
+  font-size: 20px
+  line-height: 20px
+  padding: 14px 0
+  margin: 30px 0
+  text-transform: uppercase
+  cursor: pointer
+.donate-submit small
+  color: rgba(255, 255, 255, 0.4)
+  font-size: 13px
+\::-webkit-input-placeholder
+  color: #FFF
+  font-size: 14px
+  font-weight: 300
+\:-moz-placeholder
+  color: #FFF
+  font-weight: 300
+\::-moz-placeholder
+  color: #FFF
+  font-weight: 300
+\:-ms-input-placeholder
+  font-weight: 300
+  color: #FFF
+*:focus
+  outline: none
